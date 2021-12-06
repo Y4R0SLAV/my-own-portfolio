@@ -1,0 +1,36 @@
+.wrapper {
+  background-image: url(./../../assets/img/headerBG.png);
+  background-repeat: no-repeat;
+  background-size:contain;
+  height: 590px;
+}
+
+.container {
+  display: block;
+  padding: 20vh 0 0 0;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+  color: white;
+}
+
+.contacts {
+  list-style-type: none;
+}
+.container h4 {
+  font-size: 36px;
+}
+.container p {
+  padding: 15px 0;
+  font-size: 18px;
+}
+
+.contactItem {
+  display: flex;
+  max-width: 69%;
+  justify-content: space-between;
+}
+
+.contactName {
+  font-weight: 600;
+}
