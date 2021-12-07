@@ -1,10 +1,10 @@
-import { url } from 'inspector'
 import React from 'react'
 import styles from './education.module.css'
+import urls from '../../urls'
 
 
 const Education = () => {
-  return <div className={styles.wrapper} >
+  return <div className={styles.wrapper} id={urls.education} >
     <div className={styles.container}>
     <div className={styles.leftBlock}>
         <h1>Образование </h1>

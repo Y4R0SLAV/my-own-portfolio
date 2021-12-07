@@ -1,9 +1,10 @@
 import React from 'react'
 import styles from './skills.module.css'
+import urls from './../../urls';
 
 
 const Skills = () => {
-  return <div className={styles.wrapper}>
+  return <div className={styles.wrapper} id={urls.skills} >
     <div className={styles.container}>
       <div className={styles.leftBlock}>
         <h1> Навыки </h1>

@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './hello.module.css'
+import urls from './../../urls';
 
 const getContact = (name: string, data: string) => {
   return <li className={styles.contactItem}>
@@ -17,7 +18,7 @@ const Contacts = () => {
   </ul>
 }
 const Hello = () => {
-  return <div className={styles.wrapper}>
+  return <div className={styles.wrapper} id={urls.hello} >
     <div className={styles.container}>
       <h4>Я - Кораблев Ярослав </h4>
       <p> Веб разработчик из Твери. В настоящее время - не имею постоянного места занятости. Хочу взять на себя больше работы и повысить свои навыки в качестве веб-разработчика. </p>

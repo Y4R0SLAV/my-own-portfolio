@@ -1,9 +1,9 @@
 import React from 'react'
+import urls from '../../urls'
 import styles from './experience.module.css'
 
-
 const Experience = () => {
-  return <div className={styles.wrapper}>
+  return <div className={styles.wrapper} id={urls.experience} >
     <div className={styles.container}>
     <div className={styles.leftBlock}>
         <h1>Опыт </h1>
