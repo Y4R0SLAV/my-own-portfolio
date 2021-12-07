@@ -1,0 +1,75 @@
+.wrapper {
+  border-bottom: 2px solid #e0e0e0;
+  background-color: white;
+}
+
+.container {
+  padding: 30px 0;
+  max-width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.leftBlock {
+  text-align: left;
+  max-width: 35%;
+  padding-top: 20px;
+}
+
+
+.leftBlock p{
+  opacity: 0.7;
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+.projects {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  grid-column-gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.project {
+  text-align: left;  
+  cursor: pointer;
+  padding-bottom: 25px;
+}
+
+.project:hover .projName {
+  text-decoration: underline;
+  color: rgb(58, 16, 211);
+  transition: 0.3s;
+}
+
+
+
+.projData {
+  opacity: 0.75;
+  font-size: 15px;
+}
+
+.projName {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0px;
+  padding: 5px 0 7px 0;
+}
+
+.projImg{
+  display: inline-block;
+  overflow: hidden;
+}
+
+.projImg img{
+  max-width: 100%;
+  max-height: 100%;
+  transition: all 0.5s;
+  display: block;
+}
+
+.projImg img:hover {
+  transform: scale(1.15);
+}

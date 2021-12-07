@@ -16,8 +16,7 @@ const Navigation = () => {
                   {text: "Навыки", url: ""},
                   {text: "Опыт", url: ""},
                   {text: "Образование", url: ""},
-                  {text: "Проекты", url: ""},
-                  {text: "Cвязаться со мной", url: ""}
+                  {text: "Проекты", url: ""}
                 ]
   return <ul className={styles.navigation}>
       {buttons.map(button => getButton(button.text, button.url))}
