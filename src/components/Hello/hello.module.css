@@ -1,8 +1,9 @@
 .wrapper {
   background-image: url(./../../assets/img/headerBG.png);
   background-repeat: no-repeat;
-  background-size:contain;
-  height: 590px;
+  background-position: center center;
+  background-size: contain;
+  height: 555px;
 }
 
 .container {
