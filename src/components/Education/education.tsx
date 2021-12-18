@@ -13,8 +13,8 @@ const Education = () => {
       <div className={styles.rightBlock}>
         <div className={styles.skill}>
           <h3>Студент</h3> <p className={styles.place}>ТвГУ</p>
-          <p className={styles.data}>Сентябрь, 2020 - Декабрь, 2021</p>
-          <p>Получал фундаментальные знания о математике, программировании и мироздании.</p>
+          <p className={styles.data}>Сентябрь, 2020 - ?</p>
+          <p>Получалю фундаментальные знания о математике, программировании и мироздании.</p>
         </div>
 
         <div className={styles.skill}>

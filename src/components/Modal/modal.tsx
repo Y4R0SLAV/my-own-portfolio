@@ -1,7 +1,6 @@
 import React, {FC} from 'react'
-import { ModalDataType } from '../../App'
-import { projects } from '../Portfolio/portfolio'
 import styles from './modal.module.css'
+import { projects } from './../../projects'
 
 type Props = {active: boolean, setActive: (x: boolean) => void, modalId: number}
 
@@ -23,10 +22,18 @@ const Modal: FC<Props> = ({active, setActive, modalId}) => {
         modalData.photos.map(url => <img src={url} alt=""/>)
         }
       </div>
-      <a href={modalData.url} target="_blank">
+      <a href={modalData.siteUrl} target="_blank">
+        { modalData.siteUrl !== "" && 
         <div className={styles.button}>
           Посетить сайт
-        </div>
+        </div> }
+      </a>
+
+      <a href={modalData.githubUrl} target="_blank">
+        { modalData.githubUrl !== "" && 
+        <div className={styles.button}>
+          Код на гитхаб
+        </div> }
       </a>
       </div>  
     </div>
