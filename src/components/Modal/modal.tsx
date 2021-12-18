@@ -17,24 +17,24 @@ const Modal: FC<Props> = ({active, setActive, modalId}) => {
       <p>{modalData.body}</p>
       <div className={styles.stack}> <span><b>СТЕК</b></span> <span>{modalData.stack}</span> </div>
       <div className={styles.date}> <span><b>ДАТА</b></span> <span>{modalData.date}</span> </div>
-      <div className={styles.images}>
-        {//@ts-ignore
-        modalData.photos.map(url => <img src={url} alt=""/>)
-        }
-      </div>
-      <a href={modalData.siteUrl} target="_blank">
-        { modalData.siteUrl !== "" && 
-        <div className={styles.button}>
-          Посетить сайт
-        </div> }
-      </a>
+    
+      
+        { modalData.siteUrl !== "" &&  
+        <a className={styles.button} href={modalData.siteUrl} target="_blank">
+          <div>
+            Посетить сайт
+          </div> 
+        </a>}
+      
 
-      <a href={modalData.githubUrl} target="_blank">
+      
         { modalData.githubUrl !== "" && 
-        <div className={styles.button}>
-          Код на гитхаб
-        </div> }
-      </a>
+        <a className={styles.button} href={modalData.githubUrl} target="_blank">
+          <div >
+            Код на гитхаб
+          </div> 
+        </a>}
+      
       </div>  
     </div>
 }

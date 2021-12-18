@@ -12,6 +12,7 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+
 $("a[href^='#']").click(function(){
   var _href = $(this).attr("href");
   //@ts-ignore

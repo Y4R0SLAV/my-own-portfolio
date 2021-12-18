@@ -8,6 +8,8 @@ const getProject = (imgSrc: string, name: string,
                     projId: number,
                     handleClick: (x:boolean) => void,
                     setModalId: (x: number) => void) => {
+  
+
   return <div className={styles.project} onClick={() => {handleClick(true); setModalId(projId)}}>
     <div className={styles.projImg}> <img src={imgSrc} alt={name} /> </div>
     <h3 className={styles.projName}>{type + ` "` + name + `"` }</h3>
@@ -23,7 +25,7 @@ const Portfolio: FC<{setActive: (x: boolean) => void, setModalId: (x: number) =>
         </div>
       </div>
       <div className={styles.projects}>
-        {projects.map(proj => getProject(proj.img, proj.name, proj.date, proj.type, proj.id, setActive, setModalId))}
+        {projects.reverse().map(proj => getProject(proj.img, proj.name, proj.date, proj.type, proj.id, setActive, setModalId))}
       </div>
     
   </div>

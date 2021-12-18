@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './App.css'
 import Footer from './components/Footer/footer'
 import Header from './components/Header/header'
@@ -18,8 +18,16 @@ function App() {
   const [modalActive, setModalActive] = useState(false)
   const [modalId, setModalId] = useState(0)
 
+  useEffect(() => {
+    if (modalActive) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'unset'
+    }
+  }, [modalActive]);
+
   return (
-    <div className="App">
+    <div className='App'>
       <Header />
       <Main setActive={setModalActive} setModalId={setModalId}/>
       <Footer/>
