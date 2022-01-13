@@ -1,6 +1,17 @@
 export const projects = [
   {
     img: "https://demotivation.ru/wp-content/uploads/2020/10/1493123379_myau-krasivye-foto-malenkih-kotov-10.jpg",
+    type: "Верстка сайта",
+    name: "Data Cloud",
+    date: "Январь, 2022",
+    body: 'Впервые решил довести верстку до конца и сделать её адаптивной. Кнопки не работают, но оно и не надо.',
+    stack: "HTML, CSS, JavaScript",
+    siteUrl: "https://cloud-layout.vercel.app/",
+    githubUrl: "https://github.com/Y4R0SLAV/cloud-layout",
+    id: 1
+  },
+  {
+    img: "https://demotivation.ru/wp-content/uploads/2020/10/1493123379_myau-krasivye-foto-malenkih-kotov-10.jpg",
     type: "Портфолио",
     name: "Ярослав",
     date: "Декабрь, 2021",
@@ -8,7 +19,7 @@ export const projects = [
     stack: "React, JavaScript, TypeScript, HTML, CSS",
     siteUrl: "",
     githubUrl: "https://github.com/Y4R0SLAV/my-own-portfolio",
-    id: 4
+    id: 2
   },
 
   {
@@ -31,7 +42,7 @@ export const projects = [
   stack: "React, Redux, JavaScript, HTML, CSS",
   siteUrl: "https://ovsyankin-boutique.herokuapp.com/",
   githubUrl: "https://github.com/Y4R0SLAV/web-store",
-  id: 2
+  id: 4
 },
 {
   img: "https://demotivation.ru/wp-content/uploads/2020/10/1493123379_myau-krasivye-foto-malenkih-kotov-10.jpg",
@@ -42,5 +53,5 @@ export const projects = [
   stack: "React, Redux, JavaScript, TypeScript, HTML, CSS",
   siteUrl: "",
   githubUrl: "https://github.com/Y4R0SLAV/social-web",
-  id: 1
+  id: 5
 }]
