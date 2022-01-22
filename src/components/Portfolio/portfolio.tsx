@@ -10,7 +10,7 @@ const getProject = (imgSrc: string, name: string,
                     setModalId: (x: number) => void) => {
   
 
-  return <div className={styles.project} onClick={() => {handleClick(true); setModalId(projId)}}>
+  return <div key={projId} className={styles.project} onClick={() => {handleClick(true); setModalId(projId)}}>
     <div className={styles.projImg}> <img src={imgSrc} alt={name} /> </div>
     <h3 className={styles.projName}>{type + ` "` + name + `"` }</h3>
     <p className={styles.projData}>{data}</p>

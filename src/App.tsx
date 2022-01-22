@@ -17,18 +17,19 @@ export type ModalDataType = {
 function App() {
   const [modalActive, setModalActive] = useState(false)
   const [modalId, setModalId] = useState(0)
+  const [burgerActive, setBurgerActive] = useState(false)
 
   useEffect(() => {
-    if (modalActive) {
+    if (modalActive || burgerActive) {
       document.body.style.overflow = 'hidden'
     } else {
       document.body.style.overflow = 'unset'
     }
-  }, [modalActive]);
+  }, [modalActive, burgerActive]);
 
   return (
     <div className='App'>
-      <Header />
+      <Header burgerActive={burgerActive} setBurgerActive={setBurgerActive}/>
       <Main setActive={setModalActive} setModalId={setModalId}/>
       <Footer/>
       <Modal active={modalActive} setActive={setModalActive} modalId={modalId}/>

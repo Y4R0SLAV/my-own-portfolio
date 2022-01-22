@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
-import $ from "jquery"
+import reportWebVitals from './reportWebVitals'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,12 +12,32 @@ ReactDOM.render(
 );
 
 
-$("a[href^='#']").click(function(){
-  var _href = $(this).attr("href");
-  //@ts-ignore
-  $("html, body").animate({scrollTop: $(_href).offset().top - 89},1500); 
-  return false; 
-});
+
+
+
+const menuLinks = document.querySelectorAll('.menuLink[data-goto]')
+
+const onMenuLinkClick = (e: any) => {
+  const menuLink = e.target
+  if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+    const gotoBlock = document.querySelector(menuLink.dataset.goto)
+    // @ts-ignore
+    const gotoBlockValue = gotoBlock.getBoundingClientRect().top + window.pageYOffset - document.querySelector('.header').offsetHeight
+
+    window.scrollTo({
+      top: gotoBlockValue,
+      behavior: "smooth"
+    })
+
+    e.preventDefault()
+  }
+}
+
+if (menuLinks.length > 0) {
+  menuLinks.forEach(menuLink => 
+      menuLink.addEventListener('click', onMenuLinkClick)
+  )
+}
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

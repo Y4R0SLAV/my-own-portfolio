@@ -1,10 +1,9 @@
 import React from 'react'
 import styles from './hello.module.css'
 import urls from './../../urls'
-import helloImage from '../../assets/img/headerBG.png'
 
 const getContact = (name: string, data: string) => {
-  return <li className={styles.contactItem}>
+  return <li className={styles.contactItem} key={name}>
     <span className={styles.contactName}> {name.toUpperCase()} </span>
     <span className={styles.contactData}> {data} </span>
   </li>
@@ -18,10 +17,10 @@ const Contacts = () => {
     {contacts.map(contact => getContact(contact.name, contact.data))}
   </ul>
 }
+
 const Hello = () => {
   return <div className={styles.wrapper} id={urls.hello} >
-    <img className={styles.img} src={helloImage} alt="" />
-    <div className={styles.container}>
+    <div className={styles.content}>
       <h4>Я - Кораблев Ярослав </h4>
       <p> Веб разработчик из Твери. В настоящее время - не имею постоянного места занятости. Хочу взять на себя больше работы и повысить свои навыки в качестве веб-разработчика. </p>
       <Contacts />
