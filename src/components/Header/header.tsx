@@ -50,6 +50,7 @@ const Header: React.FC<setBurgerProps> = ({burgerActive, setBurgerActive}) => {
       </div>
 
     </div>
+    
     <BurgerMenu  
       burgerActive={burgerActive} 
       setBurgerActive={setBurgerActive} 
