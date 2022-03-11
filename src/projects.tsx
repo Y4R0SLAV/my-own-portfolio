@@ -26,10 +26,14 @@ export const projects = [
     type: "Тестовый проект",
     name: "Youtube requests",
     date: "Декабрь, 2021",
-    body: `  Тестовое задание для тверской компании Крит. В этом проекте я впервые работал с YouTube Api и LocalStorage. Выглядит неказисто, но работает исправно. Ограничения на ключ от ютуб апи не стоят. Пожалуйста не шалите с моими квотами. Файл с логинами и паролями пользователей: './src/auth.json'.`,
+    body: `  Тестовое задание для тверской компании Крит. В этом проекте я впервые работал с YouTube Api и LocalStorage. Выглядит неказисто, но работает исправно. Ограничения на ключ от ютуб апи не стоят. Пожалуйста не шалите с моими квотами. (Вот логины и пароли для входа :
+      login - password ;
+      user1 - user1 ;
+      user2 - qwerty ;
+      user3 - checkcheckcheck).`,
     stack: "React, Redux, JavaScript, TypeScript, HTML, CSS",
-    siteUrl: "https://test-task-for-crit.herokuapp.com",
-    githubUrl: "https://github.com/Y4R0SLAV/crit-youtube-test-task",
+    siteUrl: "https://youtube-requests.herokuapp.com/",
+    githubUrl: "https://github.com/Y4R0SLAV/youtube-requests",
     id: 3
   },
   {
