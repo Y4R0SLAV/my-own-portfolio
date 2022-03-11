@@ -4,7 +4,7 @@ import styles from './footer.module.css'
 const Footer = () => {
   return <div className={styles.wrapper} >
     <div className={styles.container}>
-      Copyright 2021 Yaroslav.
+      Copyright © 2021-2022 Yaroslav.
     </div>
   </div>
 }

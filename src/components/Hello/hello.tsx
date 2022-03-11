@@ -9,7 +9,7 @@ const getContact = (name: string, data: string) => {
   </li>
 }
 
-const contacts = [{name: "Телефон", data: "+7-960-713-77-57"}, {name: "Почта", data: "jeros1337@gmail.com"}]
+const contacts = [{name: "Телефон", data: "+7-960-713-77-57"}, {name: "Почта", data: "yakorablevrr@gmail.com"}]
 
 
 const Contacts = () => {
